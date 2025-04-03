@@ -1,0 +1,18 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: #816a6a;
+    color: white;
+}
+
+.button {
+    background-color: rgb(219, 210, 161);
+    color: black;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: aqua;
+}
