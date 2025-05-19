@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="author" content="Tong Xiong" >
+    <meta name="description" content="Create an event" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/style.css" >
+
+    <title>Create an Event</title>
+  </head>
+  <body id="top">
+    <header>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="top-of-page">
+          <a href="welcome.html">Welcome</a>
+          <h2>Site Navigation</h2>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="create-event.html">Create an Event</a></li>
+          <li><a href="welcome.html">Landing Page</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article class="intro">
+        <div class="header">
+          <figure>
+            <img src="img/confetti-500x500.png" alt="confetti" width="500" height="500" loading="lazy">
+            <figcaption>confetti</figcaption>
+          </figure>
+          <h1>Create an event</h1>
+            <figure>
+            <img src="img/confetti-500x500.png" alt="confetti" width="500" height="500" loading="lazy">
+            <figcaption>confetti</figcaption>
+          </figure>
+        </div>
+        <form class="form-container" action="https://httpbin.org/get" method="get">
+          <label for="firstName">First name:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            autocomplete="on"
+            required
+            autofocus
+          >
+
+          <label for="lastName">Last name:</label>
+          <input type="text" name="lastName" id="lastName" required >
+
+          <label for="eventName">Event name:</label>
+          <input type="text" name="eventName" id="eventName" required >
+
+          <label for="description">Event description:</label>
+          <textarea
+            name="description"
+            id="description"
+            required
+            placeholder="Describe your event here..."
+          ></textarea>
+
+          <label for="datetime">Date:</label>
+          <input type="date" name="datetime" id="datetime" >
+
+          <label for="eventImage">Upload event image:</label>
+          <input type="file" name="eventImage" id="eventImage" >
+
+          <input type="submit" value="Submit" >
+          <input type="reset" value="Reset" >
+        </form>
+      </article>
+    </main>
+
+    <footer  class="bottom-of-page">
+      <p>© 2025 Tong Xiong</p>
+      <nav>
+        <a href="#top">⬆️ Back to top</a> |
+        <a href="site.html">Site Info</a>
+      </nav>
+    </footer>
+  </body>
+</html>

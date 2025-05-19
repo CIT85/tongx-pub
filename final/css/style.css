@@ -1,0 +1,679 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* GENERAL */
+html {
+  overflow-y: scroll;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-top: 96px;
+  min-width: 360px;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-title {
+  display: flex;
+  position: sticky;
+  top: 96px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9d28a;
+}
+
+/*RESUME*/
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.header-container img {
+  width: 100%;
+  max-width: 130px;
+  border: 2px solid black;
+}
+
+
+/* ------ */
+
+/* Create an Event */
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  width: 100%;
+  max-width: 200px;
+  border: 0px;
+  border-radius: 50%;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.intro h1 {
+  padding: 20px;
+}
+.bottom-of-page {
+  position: relative;
+  margin-top: 40px;
+  text-align: center;
+  }
+
+  input[type="text"],[type="date"], [type="email"]{
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #c5e8f6;
+  width: 100%;
+  }
+
+    /* -------- */
+
+  /* EventSight */
+  #text_search {
+    width: 50%;
+  }
+
+  .button-link {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #e0a800;
+}
+
+  /* -------- */
+
+  /* Welcome Page */
+
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.landing {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: #fefae0;
+}
+
+  /* --------- */
+
+  #message {
+  padding: 10px;
+  border: 1px solid #aaa;
+  background-color: #c5e8f6;
+  border-radius: 5px;
+  resize: vertical; /* allow user to resize height only */
+  width: 100%; /* makes it full-width within its container */
+  box-sizing: border-box; /* prevents padding from breaking width */
+  margin-bottom: 10px; /* spacing below */
+  }
+
+  #description {
+  padding: 10px;
+  border: 1px solid #aaa;
+  background-color: #c5e8f6;
+  border-radius: 5px;
+  resize: vertical; /* allow user to resize height only */
+  width: 100%; /* makes it full-width within its container */
+  box-sizing: border-box; /* prevents padding from breaking width */
+  margin-bottom: 10px; /* spacing below */
+}
+  /* --------- */
+
+.top-of-page {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.top-of-page a {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#top {
+  scroll-margin-top: 96px;
+}
+
+.main-nav {
+  display: flex; /* rows automatically. Space things evenly */
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: #f5deb3;
+  height: 96px;
+  z-index: 1000;
+}
+
+.main-nav ul {
+  display: flex; /* making sure the list items are rows*/
+  gap: 1rem;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+a,
+a:visited a:focus {
+  text-decoration: none;
+  color: #333;
+  padding: 2px;
+  margin: 1px;
+}
+
+a:hover {
+  color: #0077cc;
+  box-shadow: 0 0 2 0 rgba(0, 0, 0, 0.15);
+}
+
+.profile-pic img {
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.portfolio-text {
+    display: flex; /* Center the title and text */
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.portfolio-text {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+figcaption {
+    position: absolute;
+    left: -10000px;
+}
+.container {
+  display: flex; /* I want the row layout and also flexibility of centering*/
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+
+.blog {
+    position: sticky;
+    top: 96px;
+    text-align: center;
+    background-color: rgb(219, 171, 171);
+    font-weight: bolder;
+}
+
+.blog-container {
+  display: flex; /* Flex row and also centering*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+    background-color: antiquewhite;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.blog-text {
+  display: flex; /* keeps title and text aligned */
+  flex-direction: column;
+  align-items: center;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 300px;
+    width: 100%;
+}
+
+.blog-pic img{
+    max-width: 220px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.project-container {
+  display: grid; /* Easy way to distribute multiple articles into columns */
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.project-title{
+  position: sticky;
+  top: 96px;
+    text-align: center;
+    background-color: bisque;
+    font-weight: bolder;
+}
+
+
+.project-container article {
+  display: flex; /* Within the articles container, making sure the content is aligned*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.project-container img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.contact {
+  position: sticky;
+  top: 96px;
+  text-align: center;
+  background-color: rgb(195, 138, 138);
+  font-weight: bolder;
+
+}
+
+.info {
+  background-color: antiquewhite;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+
+/* Form Layout */
+.column-form { /* Easy to maintain 1 column and multiple rows*/
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  gap: 1rem;
+}
+
+.column-form input,
+.column-form textarea {
+  padding: 0.5rem;
+  width: 100;
+}
+
+/* Links on the side */
+footer aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer aside li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer bottom row */
+
+footer {
+  text-align: center;
+  background-color: wheat;
+}
+
+footer p,
+footer nav {
+  grid-column: 1 / -1;
+  text-align: center;
+  background-color: wheat;
+}
+
+.social-media {
+  background-color: antiquewhite;
+}
+
+.social-media ul {
+  display: flex; /* Quick and simple centering two items*/
+  justify-content: center;
+  width: 100%;
+}
+/*  COLOR PALETTE */
+.site {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px 20px 20px;
+  text-align: center;
+  gap: 1rem;
+}
+
+.menu-grid ul li {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.menu-grid ul li a {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-grid article {
+  background-color: #e8f4ff;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.menu-grid ul{
+  text-decoration: none;
+  list-style-type: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #c5e8f6;
+}
+
+
+
+.swatch {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 1px solid #aaa;
+  margin: 0.5rem 1rem 0.5rem 0;
+  vertical-align: middle;
+}
+
+.primary {
+  background-color: #f0d8aa;
+}
+
+.accent {
+  background-color: #c49a9a;
+}
+
+.background {
+  background-color: #fdfaf4;
+}
+
+.text {
+  background-color: #333333;
+}
+
+.hover {
+  background-color: #0077cc;
+}
+
+
+/* 300 - 768px */
+@media screen and (max-width: 768px) {
+  .top-of-page {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+    height: 150px;
+  }
+
+  .main-nav h2 {
+    display: none;
+  }
+
+  .main-nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    gap: 16px;
+    border-radius: 10%;
+    flex-wrap: wrap;
+  }
+  .main-nav ul li {
+    padding: 3px;
+    border-radius: 2%;
+    flex: 1 1 40%;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid black;
+  }
+
+  .main-nav ul li a {
+   display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+
+.nav-scroll ul::-webkit-scrollbar {
+  display: none; /* hides scrollbar in Chrome */
+}
+
+.portfolio-title {
+  top: 150px;
+}
+
+.intro, .event-title, .site, .header-container, .pets{
+  margin-top: 60px;
+}
+
+
+.container {
+  display: flex; /* I want the row layout and also flexibility of centering*/
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  background-color: antiquewhite;
+  padding: 20px;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.portfolio-text {
+  flex-shrink: 1;
+}
+
+.blog {
+    position: sticky;
+    top: 150px;
+    text-align: center;
+    background-color: rgb(219, 171, 171);
+    font-weight: bolder;
+}
+
+.blog-container {
+  display: flex; /* Flex row and also centering*/
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: antiquewhite;
+  white-space: nowrap;
+  padding: 20px;
+}
+
+.blog-text {
+  display: flex; /* keeps title and text aligned */
+  flex-direction: column;
+  align-items: center;
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 300px;
+  width: 100%;
+}
+
+.blog-pic img{
+    max-width: 220px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+}
+
+
+/* 768 - 1024 */
+@media screen and (min-width: 768px) {
+  /* Set as the default base*/
+}
+
+/* 1024 - 1200 */
+/* Center and space out nav bar on screens ≥ 1024px */
+@media screen and (min-width: 1024px) {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* adjust as needed */
+    flex-wrap: nowrap;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+
+  .main-nav ul li {
+    list-style: none;
+  }
+}
+
+/* Makes some important selections to be bigger 1200px ===== */
+@media screen and (min-width: 1200px) {
+
+  .container,
+  .blog-container,
+  .project-container {
+    max-width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 3rem;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+
+  .main-nav ul li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 0;
+    transition: transform 0.3s ease;
+  }
+
+  .blog-container {
+    padding: 30px;
+    justify-content: space-evenly;
+  }
+
+  .blog-text {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+  .portfolio-text {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .column-form {
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+
+}
