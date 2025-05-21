@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Your Name" />
+  <meta name="description" content="Contact page with form" />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="top-of-page">
+        <a href="welcome.html">Welcome</a>
+        <h2>Site Navigation</h2>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="create-event.html">Create an Event</a></li>
+        <li><a href="welcome.html">Landing Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-section">
+        <div class="header-phone">
+                        <figure>
+                <img src="./img/phone-call.png" alt="phone call" width="512" height="512" loading="lazy">
+                <figcaption>A phone calling</figcaption>
+            </figure>
+            <h1 class="contact-heading">Contact Me</h1>
+            <figure>
+                <img src="./img/phone-call.png" alt="phone call" width="512" height="512" loading="lazy">
+                <figcaption>A phone calling</figcaption>
+            </figure>
+        </div>
+      <form class="contact-form" action="https://httpbin.org/post" method="post">
+        <fieldset class="contact-fieldset">
+          <legend class="contact-legend">Get in Touch</legend>
+
+          <label class="contact-label" for="name">Full Name:</label>
+          <input class="contact-input" type="text" id="name" name="name" required />
+
+          <label class="contact-label" for="email">Email Address:</label>
+          <input class="contact-input" type="email" id="email" name="email" required />
+
+          <label class="contact-label" for="reason">Reason for Contact:</label>
+          <select class="contact-select" id="reason" name="reason" required>
+            <option value="">--Please choose an option--</option>
+            <option value="feedback">Feedback</option>
+            <option value="question">Question</option>
+            <option value="collaboration">Collaboration</option>
+          </select>
+
+          <label class="contact-label" for="message">Message:</label>
+          <textarea class="contact-textarea" id="message" name="message" rows="6" required placeholder="Type your message here..."></textarea>
+
+          <input class="contact-submit" type="submit" value="Send Message" />
+        </fieldset>
+      </form>
+    </section>
+  </main>
+      <footer>
+      <p>© 2025 Tong Xiong</p>
+      <nav>
+        <a href="#">⬆️ Back to Top</a> |
+        <a href="site.html">Site Info</a> |
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </footer>
+</body>
+</html>

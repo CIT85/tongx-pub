@@ -472,6 +472,83 @@ footer nav {
   background-color: #0077cc;
 }
 
+/* === Contact Page === */
+
+.header-phone {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-phone figure img {
+  width: 100%;
+  max-width: 50px;
+}
+
+.header-phone img {
+  width: 100%;
+  max-width: 50%;
+}
+.contact-page .contact-section {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page .contact-heading {
+  text-align: center;
+  color: #333333;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-fieldset {
+  border: none;
+  padding: 0;
+}
+
+.contact-label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444444;
+}
+
+.contact-input,
+.contact-select,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #c5e8f6;
+}
+
+.contact-submit {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-submit:hover {
+  background-color: #0056b3;
+}
+
 
 /* 300 - 768px */
 @media screen and (max-width: 768px) {
